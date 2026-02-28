@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basreng Pedas | Snack Lokal Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--primary:#C4001A;
+--dark:#7A000F;
+--cream:#F5E9DA;
+--white:#FFFFFF;
+--text:#2B2B2B;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--cream);
+color:var(--text);
+}
+
+/* ================= NAVBAR ================= */
+nav{
+position:fixed;
+top:0;
+width:100%;
+max-width:480px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(8px);
+padding:12px 20px;
+font-weight:600;
+font-size:14px;
+z-index:1000;
+}
+
+/* ================= HERO ================= */
+.hero{
+background:linear-gradient(135deg,var(--primary),var(--dark));
+color:white;
+padding:110px 20px 80px;
+text-align:center;
+border-bottom-left-radius:35px;
+border-bottom-right-radius:35px;
+position:relative;
+overflow:hidden;
+}
+
+.hero h1{
+font-size:34px;
+font-weight:800;
+letter-spacing:1px;
+animation:fadeUp 1s ease forwards;
+}
+
+.hero p{
+margin-top:10px;
+font-weight:300;
+opacity:0.9;
+animation:fadeUp 1.3s ease forwards;
+}
+
+.cta{
+display:inline-block;
+margin-top:30px;
+padding:14px 28px;
+background:white;
+color:var(--primary);
+border-radius:50px;
+font-weight:700;
+text-decoration:none;
+transition:all .3s ease;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cta:hover{
+transform:translateY(-4px) scale(1.05);
+background:var(--cream);
+}
+
+/* Floating highlight */
+.hero::after{
+content:"";
+position:absolute;
+width:200px;
+height:200px;
+background:rgba(255,255,255,0.1);
+border-radius:50%;
+top:-60px;
+right:-60px;
+}
+
+/* ================= SECTION ================= */
+section{
+max-width:480px;
+margin:auto;
+padding:60px 20px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:22px;
+margin-bottom:25px;
+box-shadow:0 15px 30px rgba(0,0,0,0.05);
+transition:all .3s ease;
+opacity:0;
+animation:fadeUp 0.8s ease forwards;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 35px rgba(0,0,0,0.08);
+}
+
+h2{
+margin-bottom:15px;
+font-size:20px;
+color:var(--primary);
+}
+
+/* ================= HALAL BADGE ================= */
+.halal{
+width:80px;
+margin-top:10px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ================= LIST ================= */
+ul{
+list-style:none;
+}
+
+ul li{
+padding:10px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+/* ================= TABLE ================= */
+table{
+width:100%;
+border-collapse:collapse;
+font-size:13px;
+margin-top:10px;
+}
+
+thead{
+background:var(--primary);
+color:white;
+}
+
+th,td{
+padding:10px;
+text-align:left;
+}
+
+tbody tr:nth-child(even){
+background:#fafafa;
+}
+
+tbody tr:hover{
+background:#ffe5e5;
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:25px;
+font-size:12px;
+border-top-left-radius:30px;
+border-top-right-radius:30px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile optimization */
+@media(max-width:480px){
+.hero h1{
+font-size:30px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>Basreng Pedas</nav>
+
+<header class="hero">
+<h1>Basreng Pedas</h1>
+<p>Snack Lokal Rasa Alami</p>
+<a href="#produk" class="cta">Lihat Informasi Produk</a>
+</header>
+
+<section id="produk">
+
+<div class="card">
+<h2>Informasi Produk</h2>
+<p><strong>Berat Bersih:</strong> 120 g</p>
+<p><strong>Kedaluwarsa:</strong> 30 November 2026</p>
+<p><strong>Klaim:</strong> Rasa Alami</p>
+<p style="font-size:12px;color:gray;margin-top:10px;">Kode Produksi: 2602MF12</p>
+<p style="font-size:12px;color:gray;">P-IRT No. 2053210050128-27</p>
+<img src="halal.jpg" alt="Label Halal" class="halal">
+</div>
+
+<div class="card">
+<h2>Komposisi</h2>
+<ul>
+<li>Tepung terigu</li>
+<li>Tepung tapioka</li>
+<li>Minyak goreng</li>
+<li>Garam</li>
+<li>Cabe</li>
+<li>Penyedap rasa</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Informasi Nilai Gizi</h2>
+<table>
+<thead>
+<tr>
+<th>Komponen</th>
+<th>Jumlah</th>
+<th>%AKG</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Energi</td><td>210 kkal</td><td>10%</td></tr>
+<tr><td>Lemak Total</td><td>12 g</td><td>18%</td></tr>
+<tr><td>Lemak Jenuh</td><td>4 g</td><td>20%</td></tr>
+<tr><td>Protein</td><td>4 g</td><td>8%</td></tr>
+<tr><td>Karbohidrat</td><td>22 g</td><td>7%</td></tr>
+<tr><td>Gula</td><td>2 g</td><td>2%</td></tr>
+<tr><td>Natrium</td><td>320 mg</td><td>14%</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h2>Informasi Produsen</h2>
+<p><strong>PD. Mutiara Abadi</strong></p>
+<p>Kab. Majalengka, Jawa Barat</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 PD. Mutiara Abadi — Basreng Pedas Premium
+</footer>
+
+</body>
+</html>
